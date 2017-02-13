@@ -26,13 +26,13 @@ echo "Deploying Eureka to Artifactory"
 cd "${CURRENT}/${FOLDER}"
 git clone https://github.com/spring-cloud-samples/github-eureka
 cd github-eureka
-./mvnw clean deploy -Ddistribution.management.release.url=http://${POTENTIAL_DOCKER_HOST}:8081/artifactory/libs-release-local
+./mvnw clean deploy -Ddistribution.management.release.url=http://54.83.156.7/artifactory/libs-release-local
 
 echo "Deploying Stub Runner to Artifactory"
 cd "${CURRENT}/${FOLDER}"
 git clone https://github.com/spring-cloud-samples/github-analytics-stub-runner-boot
 cd github-analytics-stub-runner-boot
-./mvnw clean deploy -Ddistribution.management.release.url=http://${POTENTIAL_DOCKER_HOST}:8081/artifactory/libs-release-local
+./mvnw clean deploy -Ddistribution.management.release.url=http://54.83.156.7/artifactory/libs-release-local
 
 echo "DONE!"
 

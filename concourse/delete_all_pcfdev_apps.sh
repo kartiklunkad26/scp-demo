@@ -1,19 +1,19 @@
 #!/bin/bash
 
-cf login -a https://api.local.pcfdev.io --skip-ssl-validation -u admin -p admin -o pcfdev-org -s pcfdev-test
+cf login -a https://api.run.pivotal.io -u klunkad@pivotal.io -p Pivotal@123 -o NY -s klunkad-test
 
-cf target -o pcfdev-org -s pcfdev-test
+cf target -o NY -s klunkad-test
 yes | cf delete  github-webhook
 yes | cf delete  github-analytics
 yes | cf delete  github-eureka
 yes | cf delete  stubrunner
 
-cf target -o pcfdev-org -s pcfdev-stage
+cf target -o NY -s klunkad-stage
 yes | cf delete github-webhook
 yes | cf delete  github-analytics
 yes | cf delete github-eureka
 
-cf target -o pcfdev-org -s pcfdev-prod
+cf target -o NY -s klunkad-prod
 yes | cf delete github-webhook
 yes | cf delete  github-analytics
 yes | cf delete github-eureka
