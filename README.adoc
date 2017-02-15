@@ -57,7 +57,7 @@ You can go through the setup of the demo environment for
 Each of these setups are available under the folders `jenkins` and
 `concourse` respectively.
 
-== Introduction
+== IntroductinTest
 
 In the following section we will describe in more depth the rationale
 behind the presented opinionated pipeline. We will go through each deployment
